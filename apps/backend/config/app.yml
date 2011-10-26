@@ -1,0 +1,27 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  sf_admin_dash:
+    web_dir:                      /sfAdminDashPlugin
+    image_dir:                    /sfAdminDashPlugin/images/icons/
+    default_image:                config.png
+    resize_mode:                  thumbnail
+    site:                         WildCat
+    include_path:                 true
+    include_jquery_no_conflict:   false
+    logout:                       true
+    login_route:                  @sf_guard_signin
+    logout_route:                 @sf_guard_signout
+    categories:
+      General:
+        items:
+          Properties:
+            url: property
+            image: frontpage
+            credentials: [admin]
+          User:
+            url: sf_guard_user
+            image: categories
+            credentials: [admin]            

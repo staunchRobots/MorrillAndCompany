@@ -1,0 +1,61 @@
+feature:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Feature
+    module:               feature
+    prefix_path:          /feature
+    column:               id
+    with_wildcard_routes: true
+
+photo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Photo
+    module:               photo
+    prefix_path:          /photo
+    column:               id
+    with_wildcard_routes: true
+
+detail:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Detail
+    module:               detail
+    prefix_path:          /detail
+    column:               id
+    with_wildcard_routes: true
+
+import_set:
+  url:   /import/set/:id
+  param: { module: property, action: importSet }
+
+property:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Property
+    module:               property
+    prefix_path:          /property
+    column:               id
+    with_wildcard_routes: true
+
+property_wizard:
+  url:   /property/wizard/:step/:id
+  param: { module: property, action: wizard }
+  
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: sfAdminDash, action: dashboard }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

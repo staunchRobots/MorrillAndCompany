@@ -1,0 +1,26 @@
+pk_user_admin:
+  class: sfDoctrineRouteCollection
+  options:
+    model:               sfGuardUser
+    module:              pkUserAdmin
+    prefix_path:         admin/user
+    column:              id
+    with_wildcard_routes: true
+
+pk_group_admin:
+  class: sfDoctrineRouteCollection
+  options:
+    model:               sfGuardGroup
+    module:              pkGroupAdmin
+    prefix_path:         admin/group
+    column:              id
+    with_wildcard_routes: true
+
+pk_permission_admin:
+  class: sfDoctrineRouteCollection
+  options:
+    model:               sfGuardPermission
+    module:              pkPermissionAdmin
+    prefix_path:         admin/permission
+    column:              id
+    with_wildcard_routes: true

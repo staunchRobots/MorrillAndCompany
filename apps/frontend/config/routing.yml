@@ -1,0 +1,33 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: property, action: index }
+
+property_list:
+  url:   /property-list
+  param: { module: property, action: list }
+
+property_index:
+  url:   /properties
+  param: { module: property, action: index }
+    
+show:
+  url:   /:id
+  param: { module: property, action: show }
+  
+  class: sfDoctrineRoute
+  options: { model: Property, type: object }
+  requirements:
+    sf_method: [get, post]
+    
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

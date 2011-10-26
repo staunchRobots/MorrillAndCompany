@@ -1,0 +1,5 @@
+autoload:
+  vendor:
+    name:       vendor
+    path:       %SF_LIB_DIR%/vendor
+    recursive:  on

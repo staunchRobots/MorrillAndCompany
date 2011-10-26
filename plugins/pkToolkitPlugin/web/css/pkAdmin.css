@@ -1,0 +1,713 @@
+/* ================================================================================================
+* pkContextCMS Admin
+*	Styles for Administrative Functionality
+* ================================================================================================
+*/
+
+#pk-admin-container
+{
+font: 12px/1.25 Arial, sans-serif;
+position: relative;
+float: left;
+}
+
+#pk-admin-container a img,
+#pk-admin-container a:link img,
+#pk-admin-container a:visited img
+{
+border: none;
+}
+
+#pk-admin-container a:link, 
+#pk-admin-container a:visited
+{
+color: #ac3;
+text-decoration: none;
+}
+
+#pk-admin-container a:hover
+{
+color: #333;
+}
+
+#pk-admin-container td
+{
+margin: 0;
+vertical-align: top;
+}
+
+#pk-admin-container p
+{
+}
+
+#pk-admin-container #pk-admin-bar
+{
+float: left;
+display: inline;
+width: 100%;
+margin: 0 0 20px 0;
+position: relative;
+}
+
+#pk-admin-container #pk-admin-bar,
+#pk-admin-container #pk-admin-bar a,
+#pk-admin-container #pk-admin-bar h2
+{
+color: #13A0BC;
+line-height: 24px;
+}
+
+#pk-admin-container #pk-admin-bar h2
+{
+}
+
+#pk-admin-container #pk-admin-bar h2.pk-admin-title
+{
+color: #555;
+font-size: 24px;
+line-height: 24px;
+float: left;
+top: 0;
+text-transform: capitalize;
+}
+
+
+
+#pk-admin-container #pk-admin-content
+{
+float: left;
+display: inline;
+margin: 0;
+width: 720px;
+}
+
+#pk-admin-container #pk-admin-content #pk-admin-list-actions
+{
+	width:100%;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #ddd;
+}
+
+#pk-admin-container .notice
+{
+color: #555;
+font-size: 18px;
+line-height: 18px;
+margin-bottom: 20px;
+}
+
+#pk-admin-container fieldset h2
+{
+padding: 10px 0 0;
+margin: 0 0 10px 0;
+color: #333;
+background-color: transparent;
+font-size: 14px;
+text-transform: capitalize;
+border-top: 1px #ddd solid;
+}
+
+#pk-admin-container input, 
+#pk-admin-container textarea, 
+#pk-admin-container select
+{
+padding: 3px;
+font-family: Arial, sans-serif;
+font-size: 11px;
+border: 1px solid #ddd;
+vertical-align: middle;
+width: 358px;
+}
+
+#pk-admin-container .pk-admin-text input
+{
+	float: left;
+	clear: both;
+}
+
+#pk-admin-container input.pk-admin-batch-checkbox
+{
+width: auto;
+}
+
+#pk-admin-container select
+{
+width: auto;
+}
+
+#pk-admin-container .pk-admin-batch-actions-choice select
+{
+float: left;
+margin-right: 10px;
+}
+
+#pk-admin-container .save-ok
+{
+margin-bottom: 10px;
+border: 1px solid #73B65A;
+}
+
+#pk-admin-container .save-ok h2
+{
+margin: 0 !important;
+padding: 5px 20px 5px 25px;
+font-size: 11px;
+color: #fff;
+background: #73B65A url(../images/ok.png) no-repeat 5px 2px;
+}
+
+#pk-admin-container .form-row,
+#pk-admin-container .pk-form-row
+{
+position: relative;
+padding: 10px 10px 10px 120px;
+/*overflow: hidden;*/
+float: left;
+clear: both;
+min-width:590px;
+width: 590px;
+}
+
+#pk-admin-container .pk-form-row,
+#pk-admin-container .pk-form-row td
+{
+margin-bottom: 10px;
+/*width: 100%;*/
+float: left;
+clear: both;
+position: relative;
+}
+
+#pk-admin-container .pk-form-row .content,
+#pk-admin-container .form-row .content
+{
+padding-left: 9em;
+}
+
+#pk-admin-container .pk-form-row label,
+#pk-admin-container .form-row label
+{
+float: left;
+text-align: left;
+width: 120px;
+color: #666;
+font-weight: normal !important;
+text-transform: capitalize;
+position: absolute !important;
+top: 10px;
+left: 0;
+line-height: 20px;
+display: block;
+}
+
+#pk-admin-container .pk-form-row .checkbox_list label,
+#pk-admin-container .form-row .checkbox_list label
+{
+position: absolute;
+display: inline;
+top: 0;
+left: 20px;
+float: left;
+width: auto !important;
+}
+
+#pk-admin-container .pk-form-row .checkbox_list li,
+#pk-admin-container .form-row .checkbox_list li
+{
+float: left;
+display: inline;
+width: 100%;
+position: relative;
+}
+
+#pk-admin-container .pk-form-row .pk-help
+{
+display: block;
+clear: both;
+width: 500px;
+margin: 10px 0 20px 0;
+font-size: 11px;
+color: #999;
+}
+
+#pk-admin-container #pk-admin-footer
+{
+width: 720px;
+float: right;
+line-height: 1.5;
+margin: 20px 0;
+}
+
+#pk-admin-container label.required
+{
+color: #333 !important;
+font-weight: bold !important;
+}
+
+
+
+#pk-admin-container .form-errors
+{
+margin-bottom: 10px;
+border: 1px solid #f33;
+background-color: #ffc;
+}
+
+#pk-admin-container .form-errors h2
+{
+padding: 5px 20px 5px 25px;
+font-size: 11px;
+color: #fff;
+background: #f33 url(../images/error.png) no-repeat 5px 2px;
+}
+
+#pk-admin-container .form-errors dl
+{
+padding: 5px;
+}
+
+#pk-admin-container .form-errors dt
+{
+font-weight: bold;
+float: left;
+padding-right: 5px;
+}
+
+#pk-admin-container .form-errors dd
+{
+margin: 0;
+}
+
+#pk-admin-container .form-error
+{
+color: #f33;
+}
+
+#pk-admin-container fieldset
+{
+margin-bottom: 3px;
+background-color: #fff;
+border: none;
+}
+
+#pk-admin-container ul.pk-admin-td-actions
+{
+list-style-type: none;
+}
+
+#pk-admin-container ul.pk-admin-td-actions li
+{
+list-style-type: none;
+display: block;
+float: left;
+width: auto;
+margin: 0 1px 5px 0;
+}
+
+#pk-admin-container ul.pk-admin-actions
+{
+float:left;
+display:inline;
+width:100%;
+margin: 10px 0;
+list-style-type: none;
+border-top: 1px solid #e2e2e2;
+padding-top: 20px;
+}
+
+#pk-admin-container ul.pk-admin-actions a
+{
+color: #333;
+}
+
+#pk-admin-container ul.pk-admin-actions li
+{
+list-style-type: none;
+display: inline;
+float: left;
+margin-right:1px !important;
+}
+
+#pk-admin-container.sfGuardUser a.icon.pk-add .pk-b
+{
+	background-image: url(/pkToolkitPlugin/images/pk-icon-users.png);
+}
+
+#pk-admin-container ul.pk-admin-actions li.pk-admin-batch-actions-choice
+{
+float: left;
+}
+
+#pk-admin-container ul.pk-admin-actions input
+{
+padding: 2px;
+color: #333;
+font-size: 11px;
+font-family: Arial, sans-serif;
+border: 0px;
+border-right: 4px solid #999;
+background-color: #ffc;
+cursor: hand;
+cursor: pointer;
+width: auto;
+}
+
+#pk-admin-container .pk-admin-default-action
+{
+background-color: #fc6 !important;
+font-weight: bold !important;
+}
+
+.pk-admin-form-container,
+#pk-admin-form,
+#pk-admin-batch-form,
+#pk-admin-container .pk-admin-list
+{
+float: left;
+clear: both;
+width: 100%;
+border-bottom: 0px;
+border-right: 0px;
+}
+
+.pk-admin-form-container .pk-admin-form-container
+{
+	margin-top: 40px;
+	margin-left: -120px;
+	
+}
+
+#pk-admin-container .pk-admin-list-table
+{
+width: 100%;
+}
+
+#pk-admin-list-batch-actions
+{
+width: 20px;
+}
+
+#pk-admin-list-batch-actions *
+{
+display: block;
+}
+
+#pk-admin-list-th-actions
+{
+width: 100px;
+}
+
+#pk-admin-container .pk-admin-list thead th
+{
+font-size: 18px;
+padding: 6px 3px;
+text-align: left;
+border-bottom: 1px solid #e2e2e2;
+line-height: 24px;
+vertical-align: middle;
+}
+
+#pk-admin-container .pk-admin-list thead th *
+{
+float: left;
+}
+
+#pk-admin-container .pk-admin-list tfoot th
+{
+padding: 3px 6px;
+border-top: 1px solid #e2e2e2;
+background-color: #f4f4f4;
+}
+
+#pk-admin-container .pk-admin-list th a
+{
+color: #333;
+}
+
+#pk-admin-container .pk-admin-list td
+{
+padding: 6px 3px;
+border: none;
+}
+
+#pk-admin-container .pk-admin-filter li
+{
+list-style-type: none;
+}
+
+#pk-admin-container .pk-admin-row td
+{
+border-bottom: 1px solid #e2e2e2;
+}
+
+#pk-admin-container .pk-admin-row.last td
+{
+border: none;
+}
+
+#pk-admin-container .pk-admin-row-1 td
+{
+border-top: 1px solid #e2e2e2;
+}
+
+#pk-admin-container .pk-admin-edit-help
+{
+color: #aaa;
+}
+
+#pk-admin-container select.pk-admin-multiple, 
+#pk-admin-container select.pk-admin-multiple-selected
+{
+width: 12em;
+}
+
+#pk-admin-container ul.pk-admin-checklist li
+{
+list-style: none;
+list-style-position: outside !important;
+line-height: 1.5em;
+}
+
+#pk-admin-container ul.pk-admin-checklist li label
+{
+display: inline;
+float: none;
+}
+
+#pk-admin-subnav
+{`
+display: block;
+position: relative;
+float: left;
+width: 200px;
+margin-right: 40px;
+min-height: 500px;
+}
+
+#pk-admin-subnav ul, 
+#pk-admin-subnav li
+{
+display: block;
+float: left;
+width: 100%;
+}
+
+#pk-admin-subnav li
+{
+margin: 0;
+}
+
+.pk-admin-actions input
+{
+border: 1px solid #ccc !important;
+padding: 3px;
+background: #fff !important;
+font-size: 12px !important;
+vertical-align: baseline !important;
+}
+
+.pk-admin-actions input:hover
+{
+border-color: #666 !important;
+}
+
+.pk-admin-date select
+{
+}
+
+.pk-admin-list-results
+{
+float: right;
+font-size: 14px;
+color: #333;
+height: 20px;
+line-height: 20px;
+margin: 10px 0;
+width: 100px;
+}
+
+#pk-context-cms-admin-bar
+{
+width: 100%;
+margin: 0;
+float: left;
+display: inline;
+clear: both;
+height: 41px; /* this _should_ fix a safari height bug */
+}
+
+#pk-context-cms-admin-bar .pk-context-cms-admin-controls
+{
+margin-left: 10px;
+float: left;
+}
+
+#pk-context-cms-admin-bar .pk-context-cms-admin-controls li
+{
+float: left;
+display: inline;
+line-height: 30px;
+margin: 0 10px 0 0;
+}
+
+#pk-context-cms-admin-bar .pk-context-cms-admin-bg img
+{
+width: 100%;
+height: 11px;
+}
+
+
+.specialbox .content-container.editing
+{
+padding-top: 10px;
+background: url(/pkContextCMSPlugin/images/pk-special-caution.png) top left repeat-x !important;
+}
+
+.caution
+{
+float: left;
+margin-bottom: 40px;
+color: #333;
+padding: 16px 0 10px;
+border: 1px solid #e2e2e2;
+background: url(/pkContextCMSPlugin/images/pk-special-caution.png) top left repeat-x;
+}
+
+.caution-padding
+{
+display: block;
+float: left;
+margin: 0 10px;
+clear: both;
+}
+
+/* JQ Date Picker Fix */
+#ui-datepicker-div
+{
+z-index: 9999;
+}
+
+.ui-datepicker-trigger
+{/* This seems like a temporary solution, the datepicker markup sucks */
+position: relative;
+top: 6px;
+left: 3px;
+}
+
+.ui-datepicker-trigger:hover
+{
+cursor: pointer;
+}
+
+
+.pk-admin-controls
+{
+position: relative;
+float: left;
+width: 720px !important;
+border-bottom: 0;
+}
+
+
+#pk-admin-container .pk-admin-flashes
+{/* We should make two styles for .pk-admin-flashes.error and .pk-admin-flashes.notice */
+color: #EF9920;
+float: left;
+clear: both;
+width: 100%;
+margin: 0 0 20px 0;
+padding-bottom: 10px;
+border-bottom: 1px solid #ddd;
+font-size: 14px;
+line-height: 20px;
+text-indent: 24px;
+background: transparent url(/pkContextCMSPlugin/images/pk-icon-error.png) no-repeat scroll left top;
+}
+
+#pk-admin-container form .pk-form-row .error_list
+{
+width: 100%;
+float: left;
+margin: 0;
+font-size: 11px;
+}
+
+#pk-admin-container form .pk-form-row .error_list li
+{
+padding-left: 24px;
+line-height: 20px;
+}
+
+#pk-admin-container form .form-row .error_list
+{
+display: block;
+font-size: 11px;
+}
+
+#pk-admin-container form .error_list li
+{
+height: 20px;
+line-height: 24px;
+padding-left: 20px;
+background: url(/pkContextCMSPlugin/images/pk-icon-error.png) top left no-repeat;
+list-style: none;
+list-style-position: outside;
+}
+
+/* [start] PK ADMIN FILTERS =================================================================*/
+
+#pk-admin-container #pk-admin-filters-container
+{
+display: none;
+float: left;
+clear: both;
+
+width: 100%;
+margin-bottom: 24px;
+color: #333;
+border: 1px solid #e2e2e2;
+}
+
+#pk-admin-container #pk-admin-filters-container #pk-admin-filters-form
+{
+padding: 10px;
+}
+
+#pk-admin-container #pk-admin-filters-container #pk-admin-filters-form .pk-form-row
+{
+	padding:0;
+	margin:0;
+}
+
+#pk-admin-container #pk-admin-filters-container #pk-admin-filters-form .pk-form-row .pk-admin-filter-label
+{
+	width:120px;
+	float:left;
+	display:inline;
+
+}
+
+
+#pk-admin-container #pk-admin-filters-container #pk-admin-filters-form .pk-form-row .pk-admin-filter-label label
+{
+float:left;
+display:inline;
+
+}
+
+#pk-admin-container #pk-admin-filters-container #pk-admin-filters-form .pk-form-row .pk-admin-filter-field
+{
+	float:left;
+	display:inline;
+	margin:0 0 0 120px;
+}
+
+#pk-admin-container #pk-admin-filters-container #pk-admin-filters-form .pk-form-row .pk-admin-filter-field label
+{
+	position: relative;
+	display: block;
+	float: left;
+}
+
+/* [END] PK ADMIN FILTERS =================================================================*/

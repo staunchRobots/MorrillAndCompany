@@ -1,0 +1,4 @@
+[symfony]
+  name=cms
+  author=Your name here
+  orm=Doctrine

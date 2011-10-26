@@ -1,0 +1,26 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Morrill and Company - Unique Homes
+    description:  Morrill and Company is a boutique brokerage company specializing in renovating unique homes and land development.
+    keywords:     symfony, project
+    language:     en
+    robots:       index, follow
+    viewport:     initial-scale=1.0, user-scalable=no
+
+  stylesheets:    ["main,prettyPhoto.css"]
+
+  javascripts:
+#     - jquery-1.4.2.min.js,jquery-ui.min.js,html54ie,actions,jquery.prettyPhoto.js
+#    - http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js
+#    - http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js
+    - "jquery-1.4.2.min.js,jquery-ui.min.js,jquery.corner.js,html54ie,actions,jquery.flickr,gallery,jquery.prettyPhoto.js"
+#    - http://maps.google.com/maps/api/js?sensor=false
+
+  has_layout:     true
+  layout:         layout

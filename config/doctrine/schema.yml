@@ -1,0 +1,58 @@
+Property:
+  columns:
+    user_id: { type: int, notnull: true }
+    street:      varchar(255)
+    description: text
+    city:        varchar(255)
+    postal_code: varchar(6)
+    state:       varchar(2)
+    tagline:  varchar(255)
+    price:    varchar(255)
+    bedrooms: integer
+    bathrooms: integer
+    type: varchar(255)
+    status: varchar(255)
+    full_bathrooms: integer
+    half_bathrooms: integer
+    garage_spaces: integer
+    lots_size: integer
+    square_footage: integer
+    have_see_more: boolean
+  relations:
+    User: { local: user_id, foreign: id, foreignAlias: Properties, class: sfGuardUser }
+
+Detail:
+  columns:
+    property_id: { type: integer, notnull: true }
+    name: varchar(255)
+    description: text
+    movie_url: varchar(255)
+    has_photos: boolean
+    has_features: boolean
+  relations:
+    Property: { local: property_id, foreign: id, foreignAlias: Details }
+
+Photo:
+  actAs:
+    Photoable: ~
+    Sortable:
+      uniqueBy: [detail_id]
+  columns:
+    detail_id:      { type: integer, notnull: true }
+    property_id:    { type: integer, notnull: true }
+    is_main_photo:  boolean
+    views:          { type: integer, default: 0 }
+    
+  relations:
+    Property: { local: property_id, foreign: id, foreignAlias: Photos }
+    Detail: { local: detail_id, foreign: id, foreignAlias: Photos }
+
+Feature:
+  columns:
+    property_id: { type: integer, notnull: true }
+    detail_id:   { type: integer, notnull: true }
+    name: varchar(255)
+  relations:
+    Property: { local: property_id, foreign: id, foreignAlias: Features }
+    Detail: { local: detail_id, foreign: id, foreignAlias: Features }
+

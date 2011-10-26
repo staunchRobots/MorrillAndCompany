@@ -1,0 +1,1297 @@
+@charset "utf-8";
+
+/* ================================================================================================
+* Reset Styles
+*	Eric Meyer's Reset CSS -- http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+* ================================================================================================
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+{
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+
+*
+{
+/* Safari seems to ignore a lot of the reset style sheet and I am not sure why. this stuff overrides where I need it to */
+margin: 0;
+padding: 0;
+font-weight: normal;
+}
+/* TBB: in IE6 (and maybe IE7?), an explicit setting for
+ * vertical-align: breaks <img align="left">. Strange
+ * but true. align="left" is an anachronism but 
+ * Study Abroad is using it courtesy of FCK's image editor
+ */
+img
+{
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+/* vertical-align: baseline; */
+}
+/* remember to define focus styles! */
+:focus
+{
+outline: 0;
+}
+body
+{
+line-height: 1;
+color: black;
+background: white;
+}
+ol, ul
+{
+list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table
+{
+border-collapse: separate;
+border-spacing: 0;
+}
+caption, th, td
+{
+text-align: left;
+font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after
+{
+content: "";
+}
+blockquote, q
+{
+quotes: "" "";
+}
+
+body
+{
+font: 12px/1.2 arial, sans-serif;
+font-size: 12px;
+}
+
+/* == */
+/* == Buttons and Icons */
+/* == */
+
+.pk-btn
+{
+position: relative;
+float: left;
+display: inline;
+color: #fff !important;
+background-color: transparent;
+text-decoration: none !important;
+font-size: 12px;
+cursor: pointer;
+}
+
+.pk-btn:hover,
+.pk-btn:hover span,
+.pk-btn.icon:hover
+{
+background-color: #888;
+text-decoration: none !important;
+}
+
+.pk-i
+{/* background color for buttons */
+position:absolute;
+top: 0;
+left: 0;
+z-index: 0;
+width: 100%;
+height: 100%;
+display: block;
+background-color: #ac3;
+float: left;
+margin: 0;
+}
+
+.pk-b
+{
+	font-family: arial, sans-serif;
+	font-size: 12px;
+}
+
+#pk-login-form .pk-i
+{
+background-color: #666;
+}
+
+.pk-btn .pk-b
+{
+position: relative;
+float: left;
+display: inline;
+z-index: 2;
+color: #fff;
+padding: 0 4px;
+white-space: nowrap;
+text-transform: capitalize;
+height: 20px;
+line-height: 20px;
+}
+
+.pk-btn.icon .pk-b
+{
+padding: 0 4px 0 20px;
+background-position: top left;
+background-repeat: no-repeat;
+}
+
+.pk-btn.big .pk-b
+{
+	font-size:18px;
+	height:24px;
+	line-height:24px;
+	background-position: center left;
+}
+
+
+
+.pk-btn.icon-only .pk-b
+{
+padding: 0 0 0 20px;
+background-position: top left;
+background-repeat: no-repeat;
+text-indent: -9999px;
+padding: 0;
+width: 20px;
+}
+
+.icon.pk-feed .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-feed.png);
+}
+
+.icon.pk-blog .pk-b,
+.icon.pk-blogpost .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-blog.png);
+}
+
+.icon.pk-video .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-video.png);
+}
+
+.icon.pk-image .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-photo.png);
+}
+
+.icon.pk-slideshow .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-slideshow.png);
+}
+
+.icon.pk-richtext .pk-b,
+.icon.pk-text .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-text.png);
+}
+
+.icon.pk-add .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-add.png);
+}
+
+.icon.pk-history .pk-b,
+.icon.pk-history-revert .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-history.png);
+}
+
+.pk-cancel .pk-b
+{
+background-color: #ccc;
+background-image: url(/pkToolkitPlugin/images/pk-icon-cancel.png);
+}
+
+.pk-cancel:hover .pk-b
+{
+background-color: #000;
+}
+
+.icon.pk-settings .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-settings.png);
+}
+
+.icon.pk-templates .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-templates.png);
+}
+
+.icon.pk-users .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-users.png);
+}
+
+.icon.pk-media .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-media.png);
+}
+
+.icon.pk-reorganize .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-sitemap.png);
+}
+
+.icon.pk-button .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-button.png);
+}
+
+.icon.pk-pdf .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-pdf.png);
+}
+
+.icon.pk-download .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-download.png);
+}
+
+.icon.pk-publish .pk-b,
+.icon.pk-edit .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-edit.png);
+}
+
+.icon.pk-drag .pk-b,
+.icon.pk-drag .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-drag.png);
+background-position: center center;
+background-repeat: no-repeat;
+text-indent: -9999px;
+width: 20px;
+height: 20px;
+padding: 0;
+/*cursor: move;*/
+position: relative;
+}
+
+.icon.pk-drag .pk-b,
+.icon.pk-drag .pk-i
+{
+height: 20px;
+width: 20px;
+float: left;
+display: block;
+}
+
+.icon.pk-drag:hover .pk-b
+{
+background-color: #888;
+}
+
+.icon.pk-arrow-up .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-arrow-up.png);
+text-indent: -9999px;
+padding: 0;
+width: 20px;
+}
+
+.icon.pk-arrow-down .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-arrow-down.png);
+text-indent: -9999px;
+padding: 0;
+width: 20px;
+}
+
+.icon.pk-arrow-left .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-arrow-left.png);
+text-indent: -9999px;
+padding: 0;
+width: 20px;
+}
+
+.icon.pk-arrow-right .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-arrow-right.png);
+text-indent: -9999px;
+padding: 0;
+width: 20px;
+}
+
+.icon.pk-arrow-left:hover .pk-b,
+.icon.pk-arrow-right:hover .pk-b
+{
+background-position: 0 -20px !important;
+}
+
+.icon.pk-delete .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-trash.png);
+}
+
+.icon.pk-calendar .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-event.png);
+}
+
+.icon.pk-close .pk-b
+{
+background: transparent url(/pkToolkitPlugin/images/pk-icon-close.png) no-repeat scroll 0 0;
+float: left;
+height: 20px;
+line-height: 20px;
+overflow: hidden;
+padding: 0;
+text-indent: -9999px;
+width: 20px;
+}
+
+.icon.pk-close:hover .pk-b
+{
+background-position: bottom;
+}
+
+.icon.pk-events .pk-b
+{
+background-image: url(/pkToolkitPlugin/images/pk-icon-event-sprite.png);
+}
+
+.icon.pk-events.day-1 .pk-b
+{
+	background-position: 0 0px;
+}
+
+.icon.pk-events.day-2 .pk-b
+{
+	background-position: 0 -20px;
+}
+
+.icon.pk-events.day-3 .pk-b
+{
+	background-position: 0 -40px;
+}
+
+.icon.pk-events.day-4 .pk-b
+{
+	background-position: 0 -60px;
+}
+
+.icon.pk-events.day-5 .pk-b
+{
+	background-position: 0 -80px;
+}
+
+.icon.pk-events.day-6 .pk-b
+{
+	background-position: 0 -100px;
+}
+
+.icon.pk-events.day-7 .pk-b
+{
+	background-position: 0 -120px;
+}
+
+.icon.pk-events.day-8 .pk-b
+{
+	background-position: 0 -140px;
+}
+
+.icon.pk-events.day-9 .pk-b
+{
+	background-position: 0 -160px;
+}
+
+.icon.pk-events.day-10 .pk-b
+{
+	background-position: 0 -180px;
+}
+
+.icon.pk-events.day-11 .pk-b
+{
+	background-position: 0 -200px;
+}
+
+.icon.pk-events.day-12 .pk-b
+{
+	background-position: 0 -220px;
+}
+
+.icon.pk-events.day-13 .pk-b
+{
+	background-position: 0 -240px;
+}
+
+.icon.pk-events.day-14 .pk-b
+{
+	background-position: 0 -260px;
+}
+
+.icon.pk-events.day-15 .pk-b
+{
+	background-position: 0 -280px;
+}
+
+.icon.pk-events.day-16 .pk-b
+{
+	background-position: 0 -300px;
+}
+
+.icon.pk-events.day-17 .pk-b
+{
+	background-position: 0 -320px;
+}
+
+.icon.pk-events.day-18 .pk-b
+{
+	background-position: 0 -340px;
+}
+
+.icon.pk-events.day-19 .pk-b
+{
+	background-position: 0 -360px;
+}
+
+.icon.pk-events.day-20 .pk-b
+{
+	background-position: 0 -380px;
+}
+
+.icon.pk-events.day-21 .pk-b
+{
+	background-position: 0 -400px;
+}
+
+.icon.pk-events.day-22 .pk-b
+{
+	background-position: 0 -420px;
+}
+
+.icon.pk-events.day-23 .pk-b
+{
+	background-position: 0 -440px;
+}
+
+.icon.pk-events.day-24 .pk-b
+{
+	background-position: 0 -460px;
+}
+
+.icon.pk-events.day-25 .pk-b
+{
+	background-position: 0 -480px;
+}
+
+.icon.pk-events.day-26 .pk-b
+{
+	background-position: 0 -500px;
+}
+
+.icon.pk-events.day-27 .pk-b
+{
+	background-position: 0 -520px;
+}
+
+.icon.pk-events.day-28 .pk-b
+{
+	background-position: 0 -540px;
+}
+
+.icon.pk-events.day-29 .pk-b
+{
+	background-position: 0 -560px;
+}
+
+.icon.pk-events.day-30 .pk-b
+{
+	background-position: 0 -580px;
+}
+
+.icon.pk-events.day-31 .pk-b
+{
+	background-position: 0 -600px;
+}
+
+/* Some Slots need to override the background color stuff so look good*/
+.pk-btn.nobg .pk-i,
+.pk-btn.nobg .pk-i,
+.pk-btn.nobg:hover span,
+.pk-btn.nobg:hover,
+.pk-btn.nobg:hover span,
+.pk-btn.nobg:hover
+{
+	background-color: transparent !important;
+}
+
+/* Awesome flagging button styles */
+.pk-btn.pk-flag-btn:hover
+{
+	z-index:9999;
+}
+
+
+.pk-btn .pk-flag-btn-label
+{
+display:none;
+line-height:20px;
+padding: 0 4px;
+position:absolute;
+right:20px;
+top:0;
+white-space:nowrap;
+text-indent:0 !important;
+}
+
+.pk-btn .pk-flag-btn-label .pk-l
+{
+	position: relative;
+	z-index: 199;
+}
+
+.pk-btn.expanded .pk-flag-btn-label
+{
+	display: block;
+}
+
+input.pk-submit
+{/* Format ALL Submit Buttons */
+	float: left;
+position: relative;
+height: 20px;
+border: 0;
+background: none transparent;
+color: #fff;
+font: 12px/1 arial, sans-serif;
+padding: 2px;
+z-index: 2;
+width: auto !important;
+/*	background-color:#666;*/
+}
+
+input.pk-submit:hover
+{
+background-color: #999;
+cursor: pointer;
+}
+
+input[type="checkbox"],
+input.pk-checkbox,
+input.pk-radio
+{
+width: auto !important;
+border: none !important;
+}
+
+.pk-default-value
+{
+color: #888;
+}
+
+.pk-chad
+{
+position: absolute;
+z-index: 2;
+top: -13px;
+display: block;
+background: url(/pkToolkitPlugin/images/pk-icon-page-settings-arrow.png) top left no-repeat;
+width: 20px;
+height: 13px;
+}
+
+.pk-spinner
+{
+float: left;
+display: inline;
+clear: none;
+height: 20px;
+width: 20px;
+border: 0;
+margin: 0;
+padding: 0;
+background: url(/pkToolkitPlugin/images/pk-icon-loader-ani.gif) center center no-repeat;
+text-indent: -9999px;
+}
+
+.slot-overlay
+{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	float:left;
+	background-color:#fff;
+	height:100%;
+	width:100%;
+	z-index:2;
+}
+
+/* == */
+/* == PK-CONTROLS */
+/* == */
+
+ul.pk-controls
+{
+float: left;
+visibility: hidden;
+margin: 0 !important;
+}
+
+ul.pk-controls li
+{/* All buttons on the site are wrapped in a list. This LI often contains (constrains) the .pk-i element  */
+float: left;
+display: inline;
+position: relative;
+margin: 0 1px 0 0 !important;
+width: auto;
+height: auto;
+/*height: 20px;*/
+border: none;
+}
+
+ul.pk-controls li a
+{/* Make sure anchor is above .pk-i element */
+z-index: 1;
+margin-bottom: 1px;
+}
+
+ul.pk-controls .pk-controls-item.cancel
+{/* Hide All Cancel Buttons */
+display: none;
+}
+
+.pk-media ul.pk-controls.pk-media-upload-form-footer a.pk-cancel,
+.pk-media ul.pk-controls.pk-media-edit-footer a.pk-cancel
+{
+display: block;
+}
+
+ul.pk-controls.pk-area-controls
+{/* Area Controls - Sit ABOVE all slots */
+position: relative;
+z-index: 899;
+float: left;
+width: 100%;
+padding-bottom: 10px;
+}
+
+.browsing-history ul.pk-controls.pk-area-controls
+{
+z-index: 999;
+}
+
+.pk-area.singleton ul.pk-controls.pk-area-controls
+{
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+ul.pk-controls.pk-slot-controls,
+ul.pk-controls.pk-media-edit-links,
+ul.pk-controls.pk-media-multiple-list-controls
+{/* Slot Controls - Sit ON TOP of associated slot */
+position: absolute;
+z-index: 799;
+top: 0;
+left: 0;
+}
+
+.pk-area.browsing-history ul.pk-controls.pk-slot-controls
+{
+z-index: 899;
+}
+
+ul.pk-controls ul.pk-controls-item
+{/* Control Subsets */
+position: relative;
+}
+
+ul.pk-controls ul.pk-controls-item.history
+{/* This doesn't solve the z-index issue, probably need to move to jquery solution */
+z-index:899;
+}
+
+.pk-history-options
+{
+float: left;
+display: inline;
+padding-left: 1px;
+}
+
+ul.pk-area-controls li .pk-area-options,
+ul.pk-controls .pk-history-options
+{
+display: none;
+}
+
+/*.addslot-now a.pk-btn .pk-b,*/
+.editing-now a.pk-btn .pk-b,
+.browsing-history a.pk-btn.pk-history .pk-b
+{
+background-color: #eee !important;
+color: #000 !important;
+cursor: default !important;
+}
+
+.pk-area.previewing-history a.pk-btn.pk-history .pk-b
+{
+background-color: transparent !important;
+color: #fff !important;
+cursor: pointer !important;
+}
+
+.pk-area.previewing-history .pk-slots .pk-controls
+{
+display: none !important;
+}
+.pk-area.previewing-history .pk-slots .pk-slot.singleton .pk-controls
+{
+display: block !important;
+}
+
+/* Button Slot Styles */
+
+.pk-button a 
+{
+	position: relative;
+	float: left;
+	clear: both;
+}
+
+.pk-button a .button-hover-overlay
+{ /* This is not used for now. Overlay is turned off in favor of a simple opacity toggle */
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+
+/* Slideshow Slot Styles */
+
+ul.pk-slideshow-controls
+{/* frontend visible slideshow controls */
+position: absolute;
+top: -24px;
+right: 0;
+float: left;
+display: inline;
+margin-right: 1px;
+width: auto;
+height: auto;
+height: 20px;
+border: none;
+}
+
+ul.pk-slideshow-controls li
+{
+float: left;
+}
+
+ul.pk-slideshow-controls a
+{
+z-index: 1;
+}
+
+.pk-slideshow-item
+{
+display: none;
+line-height:0 !important; /*rb: this fixes the bit of whitespace after the img*/
+}
+
+ul.pk-controls li.last,
+ul.pk-slideshow-controls li.last,
+ul.pk-controls.pk-area-controls li .last
+{/* .last option has no margin */
+	margin: 0 !important;
+}
+
+
+/* == */
+/* == PK-LOGIN FORM */
+/* == */
+
+#pk-login-form
+{
+width: 220px;
+height: 400px;
+background: #f0f0f0 url(/pkToolkitPlugin/images/pk-apostrophe-login.png) no-repeat top left;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-left: -110px;
+margin-top: -200px;
+font-size: 16px;
+text-transform: lowercase;
+}
+
+#pk-login-form table
+{
+width: 100%;
+margin-bottom: 10px;
+}
+
+#pk-login-form h1
+{
+color: #fff;
+margin: 15px 0 5px 0;
+}
+
+#pk-login-form th,
+#pk-login-form td
+{
+width: 100%;
+float: left;
+display: inline;
+clear: both;
+padding-left: 20px;
+}
+
+#pk-login-form td input
+{
+width: 175px;
+border: 0px;
+font-size: 12px;
+padding: 3px 2px;
+margin: 2px 0 8px;
+font-family: arial;
+}
+
+#pk-login-form .remember th,
+#pk-login-form .remember td
+{
+width: 80px;
+clear: none;
+}
+#pk-login-form .remember td
+{
+padding: 0;
+}
+
+#pk-login-form .remember td input
+{
+width: auto;
+margin: 2px;
+}
+
+#pk-login-form .pk-controls
+{
+width: 178px;
+margin: 0 22px
+}
+
+#pk-login-form .pk-controls li
+{
+float: right;
+}
+
+#pk-login-form .pk-controls li.last
+{
+float: left;
+}
+
+#pk-login-form .pk-reset-password
+{
+font-size: 11px;
+color: #333;
+}
+
+#pk-login-form .pk-reset-password:hover
+{
+color: #fff;
+}
+
+/* == */
+/* == TAG SUGGESTIONS */
+/* == */
+
+div.tag-suggestions
+{
+position: relative;
+display: inline;
+float: left;
+clear: both;
+width: 100%;
+padding-top: 8px;
+margin: 0;
+z-index: 9999;
+font-size: 11px;
+}
+
+.tubes-tags div.tag-suggestions,
+.pk_admin_form_field_tags div.tag-suggestions
+{
+	width: 360px;
+	top: -9px;
+}
+
+#pk-media-edit-form div.tag-suggestions
+{
+	width: 216px;
+	top: -9px;
+	left: 120px;
+}
+
+#pk-admin-form div.tag-suggestions {
+left:0px;
+top:-9px;
+width:360px;
+}
+
+div.tag-suggestions .tag-spacer
+{
+	display: none;
+}
+
+div.tag-suggestions ul
+{
+position: relative;
+float: left;
+width: 100%;
+font-size: 11px;
+text-indent: 3px;
+z-index: 999;
+}
+
+div.tag-suggestions li
+{
+float: left;
+clear: both;
+width: 100%;
+margin: 0;
+visibility: hidden;
+}
+	
+div.tag-suggestions li a
+{
+float: left;
+display: block;
+visibility: visible;
+background: #fff;
+padding: 2px;
+width: 100%;
+border-left: 1px solid #666;
+border-right: 1px solid #666;
+}
+
+div.tag-suggestions li a.first
+{
+border-top: 1px solid #666;
+}
+
+div.tag-suggestions li a.last
+{
+border-bottom: 1px solid #666;
+}
+
+div.tag-suggestions li a:hover
+{
+background-color: #000;
+color: #fff !important;
+text-decoration:none;
+}
+
+
+/* == */
+/* == Multi-Select Drop Down / Button Thinger */
+/* == */
+.pk-multiple-select-list,
+.pk-multiple-select-list li
+{
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+}
+
+.pk-multiple-select-list li
+{
+	line-height: 20px;
+	margin: 2px 0;
+}
+
+.pk-media-pdf-icon-overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 35px;
+	width: 35px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/pkToolkitPlugin/images/pk-media-pdf-btn-small.png) no-repeat top left;
+}
+
+.pk-rss-feed
+{
+	display: block;
+	float: left;
+	padding-left: 20px;
+	background: url(/pkToolkitPlugin/images/pk-icon-rss-feed.png) left center no-repeat;	
+}
+
+.pk-search-form input.pk-search-field
+{
+position: absolute;
+top: 0;
+left: 6px;
+font: 12px Arial, Helvetica, Sans-serif;
+border: 0 none;
+padding: 3px;
+width: 210px;
+height: 20px;
+background: transparent;
+}
+
+.pk-search-form input.submit
+{
+position: absolute;
+top: 0;
+right: 0;
+height: 20px;
+width: 29px;
+display: block;
+border: none !important;
+z-index: 2;
+padding: 0;
+text-indent: -9999px;
+background: url(/pkContextCMSPlugin/images/pk-search-submit.png) no-repeat 0 0;
+}
+
+/* [START] standard signin ==================================================================== */
+
+#pk-signin
+{
+float: left;
+overflow:hidden;
+margin: 20px;
+width: 180px;
+}
+    
+#pk-signin-top
+{
+float: left;
+width: 180px;
+height: 10px;
+background: url(/images/emap-subnav-bg-top.png) top left no-repeat;
+}
+    
+#pk-signin-bottom
+{
+float: left;
+width: 180px;
+height: 10px;
+background: url(/images/emap-subnav-bg-bottom.png) top left no-repeat;
+}
+    
+#pk-signin-form
+{
+background: url(/images/emap-subnav-bg.png) top left repeat;
+float: left;
+width: 180px;
+}
+
+#pk-signin-form .error_list
+{
+float: left;
+display: inline;
+margin: 0 10px;
+color: #41a122;
+}
+    
+#pk-signin-form label
+{
+	font-size: 16px;
+}
+
+#pk-signin-form label,
+#pk-signin-form input,
+#pk-signin-form a
+{
+margin: 0px 10px 5px 10px;
+clear: both;
+float: left;
+}
+
+#pk-signin-form input
+{
+	font-size: 12px;
+	font-family: Arial, Sans-serif;
+	border: 1px solid #999;
+	padding: 3px 2px;
+	color: #333;
+}
+
+#pk-signin-form input[type="text"],
+#pk-signin-form input[type="password"]
+{
+	width: 155px;
+	margin-bottom: 10px;
+}
+    
+#pk-signin-form a
+{
+color: #000;
+text-decoration: none;
+}
+    
+#pk-signin-form a:hover
+{
+color: #666;
+}
+
+/* [END] standard signin ==================================================================== */
+
+
+/* == */
+/* == pk_pager_navigation - Styles for the pkPager == */
+/* == */
+
+.pk_pager_navigation
+{
+float: left;
+display: inline;
+overflow: hidden;
+margin: 10px 0;
+font-size: 11px;
+width: 100%;
+}
+
+.pk_pager_navigation a,
+.pk_pager_navigation span
+{
+display: inline;
+float: left;
+height: 20px;
+line-height: 20px;
+}
+
+.pk_pager_navigation .pk_page_navigation_number
+{
+padding: 0 6px;
+}
+
+.pk_pager_navigation span.pk_page_navigation_number.pk_pager_navigation_disabled
+{
+background-color: #e2e2e2;
+}
+
+.pk_pager_navigation a.pk_page_navigation_number:hover
+{
+color: #000;
+background-color: #e2e2e2;
+}
+
+.pk_pager_navigation .pk_pager_navigation_image
+{
+background: url(/pkToolkitPlugin/images/pk-page-arrows.png) no-repeat;
+display: inline;
+float: left;
+width: 22px;
+height: 20px;
+text-indent: -9999px;
+}
+
+.pk_pager_navigation a.pk_pager_navigation_image.disabled
+{
+cursor: default;
+}
+
+.pk_pager_navigation a.pk_pager_navigation_first
+{
+background: url(/pkToolkitPlugin/images/pk-page-arrows.png) no-repeat top left;
+}
+
+.pk_pager_navigation a.pk_pager_navigation_first:hover
+{
+background: url(/pkToolkitPlugin/images/pk-page-arrows.png) no-repeat 0px -20px;
+}
+.pk_pager_navigation a.pk_pager_navigation_previous
+{
+background-position: -22px 0;
+width: 19px;
+margin-right: 5px;
+}
+.pk_pager_navigation a.pk_pager_navigation_previous:hover
+{
+background-position: -22px -40px !important;
+}
+.pk_pager_navigation a.pk_pager_navigation_next
+{
+background-position: -41px 0;
+width: 19px;
+margin-left: 5px;
+}
+.pk_pager_navigation a.pk_pager_navigation_next:hover
+{
+background-position: -41px -60px;
+}
+.pk_pager_navigation a.pk_pager_navigation_last
+{
+background-position: -60px 0;
+}
+.pk_pager_navigation a.pk_pager_navigation_last:hover
+{
+background-position: -60px -80px;
+}
+
+.pk_pager_navigation span.pk_pager_navigation_first.pk_pager_navigation_disabled
+{
+background: url(/pkToolkitPlugin/images/pk-page-arrows.png) no-repeat 0px -20px;
+text-indent: -999px;
+overflow: hidden;
+width: 22px;
+}
+
+.pk_pager_navigation span.pk_pager_navigation_previous.pk_pager_navigation_disabled
+{
+background: url(/pkToolkitPlugin/images/pk-page-arrows.png) no-repeat -22px -40px;
+text-indent: -999px;
+overflow: hidden;
+width: 19px;
+margin-right: 5px;
+}
+
+.pk_pager_navigation span.pk_pager_navigation_last.pk_pager_navigation_disabled
+{
+background: url(/pkToolkitPlugin/images/pk-page-arrows.png) no-repeat -60px -80px;
+text-indent: -999px;
+overflow: hidden;
+width: 22px;
+}
+
+.pk_pager_navigation span.pk_pager_navigation_next.pk_pager_navigation_disabled
+{
+background: url(/pkToolkitPlugin/images/pk-page-arrows.png) no-repeat -41px -60px;
+text-indent: -999px;
+overflow: hidden;
+width: 19px;
+margin-left: 5px;
+}
