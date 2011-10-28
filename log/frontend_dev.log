@@ -1270,3 +1270,192 @@ Sep 05 08:15:08 symfony [info] {sfWebDebugLogger} Component "property/list" 4.21
 Sep 05 08:15:08 symfony [info] {sfWebDebugLogger} Partial "property/_list" 34.20 ms (1)
 Sep 05 08:15:08 symfony [info] {sfWebDebugLogger} Partial "property/_pager" 0.79 ms (1)
 Sep 05 08:15:08 symfony [info] {sfWebResponse} Send content (65771 o)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin" (/admin/user.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_new" (/admin/user/new.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_create" (/admin/user.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_edit" (/admin/user/:id/edit.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_update" (/admin/user/:id.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_delete" (/admin/user/:id.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_show" (/admin/user/:id.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_object" (/admin/user/:id/:action.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_collection" (/admin/user/:action/action.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin" (/admin/group.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_new" (/admin/group/new.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_create" (/admin/group.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_edit" (/admin/group/:id/edit.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_update" (/admin/group/:id.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_delete" (/admin/group/:id.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_show" (/admin/group/:id.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_object" (/admin/group/:id/:action.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_collection" (/admin/group/:action/action.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin" (/admin/permission.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_new" (/admin/permission/new.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_create" (/admin/permission.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_edit" (/admin/permission/:id/edit.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_update" (/admin/permission/:id.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_delete" (/admin/permission/:id.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_show" (/admin/permission/:id.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_object" (/admin/permission/:id/:action.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_collection" (/admin/permission/:action/action.:sf_format)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfRoute "property_list" (/property-list)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfRoute "property_index" (/properties)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "show" (/:id)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Oct 28 01:09:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'property',  'action' => 'index',)
+Oct 28 01:09:05 symfony [err] {sfConfigurationException} The filter name "common" is defined in "/var/www/symfony/config/config/filters.yml" but not present in "/var/www/morrillandco/prod/apps/frontend/config/filters.yml" file. To disable a filter, add a "enabled" key with a false value.
+Oct 28 01:09:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Oct 28 01:09:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin" (/admin/user.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_new" (/admin/user/new.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_create" (/admin/user.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_edit" (/admin/user/:id/edit.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_update" (/admin/user/:id.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_delete" (/admin/user/:id.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_show" (/admin/user/:id.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_object" (/admin/user/:id/:action.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_collection" (/admin/user/:action/action.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin" (/admin/group.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_new" (/admin/group/new.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_create" (/admin/group.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_edit" (/admin/group/:id/edit.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_update" (/admin/group/:id.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_delete" (/admin/group/:id.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_show" (/admin/group/:id.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_object" (/admin/group/:id/:action.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_collection" (/admin/group/:action/action.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin" (/admin/permission.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_new" (/admin/permission/new.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_create" (/admin/permission.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_edit" (/admin/permission/:id/edit.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_update" (/admin/permission/:id.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_delete" (/admin/permission/:id.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_show" (/admin/permission/:id.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_object" (/admin/permission/:id/:action.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_collection" (/admin/permission/:action/action.:sf_format)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfRoute "property_list" (/property-list)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfRoute "property_index" (/properties)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "show" (/:id)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Oct 28 01:10:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'property',  'action' => 'index',)
+Oct 28 01:10:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 28 01:10:16 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Oct 28 01:10:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 28 01:10:16 symfony [info] {propertyActions} Call "propertyActions->executeIndex()"
+Oct 28 01:10:16 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[28000] [1045] Access denied for user 'morrillt_wc'@'localhost' (using password: YES)
+Oct 28 01:10:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Oct 28 01:10:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin" (/admin/user.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_new" (/admin/user/new.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_create" (/admin/user.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_edit" (/admin/user/:id/edit.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_update" (/admin/user/:id.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_delete" (/admin/user/:id.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_show" (/admin/user/:id.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_object" (/admin/user/:id/:action.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_collection" (/admin/user/:action/action.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin" (/admin/group.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_new" (/admin/group/new.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_create" (/admin/group.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_edit" (/admin/group/:id/edit.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_update" (/admin/group/:id.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_delete" (/admin/group/:id.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_show" (/admin/group/:id.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_object" (/admin/group/:id/:action.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_collection" (/admin/group/:action/action.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin" (/admin/permission.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_new" (/admin/permission/new.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_create" (/admin/permission.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_edit" (/admin/permission/:id/edit.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_update" (/admin/permission/:id.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_delete" (/admin/permission/:id.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_show" (/admin/permission/:id.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_object" (/admin/permission/:id/:action.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_collection" (/admin/permission/:action/action.:sf_format)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfRoute "property_list" (/property-list)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfRoute "property_index" (/properties)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "show" (/:id)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Oct 28 01:11:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'property',  'action' => 'index',)
+Oct 28 01:11:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 28 01:11:21 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Oct 28 01:11:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 28 01:11:21 symfony [info] {propertyActions} Call "propertyActions->executeIndex()"
+Oct 28 01:11:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT p.id AS p__id, p.user_id AS p__user_id, p.description AS p__description, p.street AS p__street, p.city AS p__city, p.postal_code AS p__postal_code, p.state AS p__state, p.tagline AS p__tagline, p.price AS p__price, p.bedrooms AS p__bedrooms, p.bathrooms AS p__bathrooms, p.type AS p__type, p.status AS p__status, p.full_bathrooms AS p__full_bathrooms, p.half_bathrooms AS p__half_bathrooms, p.garage_spaces AS p__garage_spaces, p.lots_size AS p__lots_size, p.square_footage AS p__square_footage, p.have_see_more AS p__have_see_more FROM property p ORDER BY p.id
+Oct 28 01:11:22 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'morrilldev.property' doesn't exist
+Oct 28 01:11:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Oct 28 01:11:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin" (/admin/user.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_new" (/admin/user/new.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_create" (/admin/user.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_edit" (/admin/user/:id/edit.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_update" (/admin/user/:id.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_delete" (/admin/user/:id.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_show" (/admin/user/:id.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_object" (/admin/user/:id/:action.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_user_admin_collection" (/admin/user/:action/action.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin" (/admin/group.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_new" (/admin/group/new.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_create" (/admin/group.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_edit" (/admin/group/:id/edit.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_update" (/admin/group/:id.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_delete" (/admin/group/:id.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_show" (/admin/group/:id.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_object" (/admin/group/:id/:action.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_group_admin_collection" (/admin/group/:action/action.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin" (/admin/permission.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_new" (/admin/permission/new.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_create" (/admin/permission.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_edit" (/admin/permission/:id/edit.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_update" (/admin/permission/:id.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_delete" (/admin/permission/:id.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_show" (/admin/permission/:id.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_object" (/admin/permission/:id/:action.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "pk_permission_admin_collection" (/admin/permission/:action/action.:sf_format)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfRoute "property_list" (/property-list)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfRoute "property_index" (/properties)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "show" (/:id)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Oct 28 01:16:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'property',  'action' => 'index',)
+Oct 28 01:16:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 28 01:16:45 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Oct 28 01:16:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 28 01:16:45 symfony [info] {propertyActions} Call "propertyActions->executeIndex()"
+Oct 28 01:16:45 symfony [info] {sfDoctrineLogger} executeQuery : SELECT p.id AS p__id, p.user_id AS p__user_id, p.description AS p__description, p.street AS p__street, p.city AS p__city, p.postal_code AS p__postal_code, p.state AS p__state, p.tagline AS p__tagline, p.price AS p__price, p.bedrooms AS p__bedrooms, p.bathrooms AS p__bathrooms, p.type AS p__type, p.status AS p__status, p.full_bathrooms AS p__full_bathrooms, p.half_bathrooms AS p__half_bathrooms, p.garage_spaces AS p__garage_spaces, p.lots_size AS p__lots_size, p.square_footage AS p__square_footage, p.have_see_more AS p__have_see_more FROM property p ORDER BY p.id
+Oct 28 01:16:45 symfony [info] {sfPHPView} Render "/var/www/morrillandco/prod/apps/frontend/modules/property/templates/indexSuccess.php"
+Oct 28 01:16:45 symfony [info] {main} Set slot "bodyId"
+Oct 28 01:16:45 symfony [info] {main} Set slot "htmlId"
+Oct 28 01:16:45 symfony [info] {sfDoctrineLogger} executeQuery : SELECT p.id AS p__id, p.detail_id AS p__detail_id, p.property_id AS p__property_id, p.is_main_photo AS p__is_main_photo, p.views AS p__views, p.photo AS p__photo, p.position AS p__position FROM photo p WHERE p.property_id = ? ORDER BY p.position - (1 )
+Oct 28 01:16:45 symfony [info] {sfDoctrineLogger} executeQuery : SELECT p.id AS p__id, p.detail_id AS p__detail_id, p.property_id AS p__property_id, p.is_main_photo AS p__is_main_photo, p.views AS p__views, p.photo AS p__photo, p.position AS p__position FROM photo p WHERE p.property_id = ? AND p.is_main_photo = ? - (1, 1 )
+Oct 28 01:16:45 symfony [info] {sfPartialView} Render "/var/www/morrillandco/prod/apps/frontend/modules/property/templates/_contactModal.php"
+Oct 28 01:16:45 symfony [info] {main} Call "property->executeList()"
+Oct 28 01:16:45 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM property p
+Oct 28 01:16:45 symfony [info] {sfPartialView} Render "/var/www/morrillandco/prod/apps/frontend/modules/property/templates/_list.php"
+Oct 28 01:16:45 symfony [info] {sfDoctrineLogger} executeQuery : SELECT p.id AS p__id, p.user_id AS p__user_id, p.description AS p__description, p.street AS p__street, p.city AS p__city, p.postal_code AS p__postal_code, p.state AS p__state, p.tagline AS p__tagline, p.price AS p__price, p.bedrooms AS p__bedrooms, p.bathrooms AS p__bathrooms, p.type AS p__type, p.status AS p__status, p.full_bathrooms AS p__full_bathrooms, p.half_bathrooms AS p__half_bathrooms, p.garage_spaces AS p__garage_spaces, p.lots_size AS p__lots_size, p.square_footage AS p__square_footage, p.have_see_more AS p__have_see_more FROM property p LIMIT 10
+Oct 28 01:16:45 symfony [info] {sfDoctrineLogger} executeQuery : SELECT p.id AS p__id, p.detail_id AS p__detail_id, p.property_id AS p__property_id, p.is_main_photo AS p__is_main_photo, p.views AS p__views, p.photo AS p__photo, p.position AS p__position FROM photo p WHERE p.property_id = ? AND p.is_main_photo = ? - (1, 1 )
+Oct 28 01:16:45 symfony [info] {sfDoctrineLogger} executeQuery : SELECT p.id AS p__id, p.detail_id AS p__detail_id, p.property_id AS p__property_id, p.is_main_photo AS p__is_main_photo, p.views AS p__views, p.photo AS p__photo, p.position AS p__position FROM photo p WHERE p.property_id = ? AND p.is_main_photo = ? - (2, 1 )
+Oct 28 01:16:45 symfony [info] {sfDoctrineLogger} executeQuery : SELECT p.id AS p__id, p.detail_id AS p__detail_id, p.property_id AS p__property_id, p.is_main_photo AS p__is_main_photo, p.views AS p__views, p.photo AS p__photo, p.position AS p__position FROM photo p WHERE p.property_id = ? AND p.is_main_photo = ? - (3, 1 )
+Oct 28 01:16:45 symfony [info] {sfDoctrineLogger} executeQuery : SELECT p.id AS p__id, p.detail_id AS p__detail_id, p.property_id AS p__property_id, p.is_main_photo AS p__is_main_photo, p.views AS p__views, p.photo AS p__photo, p.position AS p__position FROM photo p WHERE p.property_id = ? AND p.is_main_photo = ? - (4, 1 )
+Oct 28 01:16:45 symfony [info] {sfPartialView} Render "/var/www/morrillandco/prod/apps/frontend/modules/property/templates/_pager.php"
+Oct 28 01:16:45 symfony [info] {sfPHPView} Decorate content with "/var/www/morrillandco/prod/apps/frontend/templates/layout.php"
+Oct 28 01:16:45 symfony [info] {sfPHPView} Render "/var/www/morrillandco/prod/apps/frontend/templates/layout.php"
+Oct 28 01:16:45 symfony [info] {main} Get slot "htmlId"
+Oct 28 01:16:45 symfony [info] {main} Get slot "bodyId"
+Oct 28 01:16:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 28 01:16:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 28 01:16:45 symfony [info] {sfWebDebugLogger} Configuration 30.41 ms (11)
+Oct 28 01:16:45 symfony [info] {sfWebDebugLogger} Action "property/index" 26.65 ms (1)
+Oct 28 01:16:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (15)
+Oct 28 01:16:45 symfony [info] {sfWebDebugLogger} View "Success" for "property/index" 188.59 ms (1)
+Oct 28 01:16:45 symfony [info] {sfWebDebugLogger} Partial "property/_contactModal" 2.65 ms (1)
+Oct 28 01:16:45 symfony [info] {sfWebDebugLogger} Component "property/list" 4.13 ms (1)
+Oct 28 01:16:45 symfony [info] {sfWebDebugLogger} Partial "property/_list" 89.77 ms (1)
+Oct 28 01:16:45 symfony [info] {sfWebDebugLogger} Partial "property/_pager" 1.66 ms (1)
+Oct 28 01:16:45 symfony [info] {sfWebResponse} Send content (56035 o)
