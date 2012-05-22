@@ -1,3 +1,11 @@
+QuoteRequest:
+  columns:
+    contents: text
+    email: varchar(255)
+    phone: varchar(255)
+  actAs:
+    Timestampable: ~
+
 Property:
   columns:
     user_id: { type: int, notnull: true }
@@ -20,6 +28,8 @@ Property:
     have_see_more: boolean
   relations:
     User: { local: user_id, foreign: id, foreignAlias: Properties, class: sfGuardUser }
+    Details: { class: Detail, local: id, foreign: property_id, cascade: [delete] }
+    Photos: {class: Photo, local: id, foreign: property_id, cascade: [delete] }
 
 Detail:
   columns:

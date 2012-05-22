@@ -1,28 +1,10 @@
-# rendering filter must be the first registered filter
-rendering:
-  class: sfRenderingFilter
-  param:
-    type: rendering
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/12-Filters
 
-# security filter must have a type of security
-security:
-  class: sfBasicSecurityFilter
-  param:
-    type: security
+rendering: ~
+security:  ~
 
-# generally, you will want to insert your own filters here
+# insert your own filters here
 
-cache:
-  class: sfCacheFilter
-  param:
-    condition: %SF_CACHE%
-
-common:
-  class: sfCommonFilter
-
-# execution filter must be the last registered filter
-execution:
-  class:  sfExecutionFilter
-  param:
-    type: execution
-
+cache:     ~
+execution: ~

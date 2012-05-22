@@ -18,6 +18,8 @@ class ProjectConfiguration extends sfProjectConfiguration
 
     $this->enablePlugins('sfWidgetFormInputSWFUploadPlugin');
 
+    $this->enablePlugins('sfImageTransformPlugin');
+
     $this->getEventDispatcher()->connect(
       'form.validation_error',
       array('BaseForm', 'listenToValidationError')

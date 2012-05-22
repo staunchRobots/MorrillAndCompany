@@ -34,15 +34,16 @@ class PropertyFormWizardStep4 extends PropertyForm
   			$id = $url[2];
   			
   			if(strpos($id, '_')) $id = substr($id, 0, strpos($id, '_'));
-  			if(!$id) continue;
 
+			// if(!$id) { die(var_dump($id)); }
+			// continue;
 			$flickr = new phpFlickr('f1710e4730545a958f505435f67e6a70', '6fa0744090de04ba');
 			$sizes = $flickr->request('flickr.photos.getSizes', array('photo_id'=>$id));
 			$sizes = unserialize($sizes);
-			
+
 			$biggest = end($sizes['sizes']['size']);
 			$bigUrl = $biggest['source'];
-			
+
   			$photoFile = file_get_contents($bigUrl);
   			if(!strlen($photoFile)) continue;
   			

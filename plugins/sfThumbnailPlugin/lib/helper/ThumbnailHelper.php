@@ -24,9 +24,21 @@ function thumbnail_path($path, $maxWidth, $maxHeight, $quality=50, $params=null)
 	$fileName = @end(explode('/', $path));
 
 	if(!file_exists($destPath)) {
+	   try {
+		if(substr($path, 0, 9) == '/uploads/')
+		  $path = sfConfig::get('sf_web_dir').$path;
+		$img = new sfImage($path);
+		$img->thumbnail($maxWidth, $maxHeight, 'center');
+		$img->setQuality($quality);
+		$img->saveAs($destPath);
+/*
 		$t = new sfThumbnail($maxWidth, $maxHeight, $quality);
 		$t->loadFile($sourcePath);
 		$t->save($destPath, 'image/jpeg'); 
+*/
+	   } catch (Exception $e) {
+		die($e->getMessage());
+	   }
 	}
 
 	return $thumbPath;

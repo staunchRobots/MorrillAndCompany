@@ -18,14 +18,14 @@ class propertyActions extends autoPropertyActions
 	{
 		$url = $r->getParameter('url');
 		$url = str_replace(array('_colon_','_slash_'), array(':','/'), $url);
+		$url = 'http://' . ltrim($url, 'http://');
 
 		$c = file_get_contents($url);
-		$c = substr($c, strpos($c, '<div id="setThumbs" class="clearfix">'));
-		$c = substr($c, 0, strpos($c, '<br clear="all"'));
-		
+		$c = substr($c, strpos($c, '<div id="setThumbs" class='));
+		$c = substr($c, 0, strpos($c, '<div id="vsPagination"'));
 		$matches = array();
+		// die(var_dump($c));
 		preg_match_all('#src="(.*?)"#', $c, $matches);
-		
 		die(json_encode($matches[1]));
 
 		$setId = $r->getParameter('id');
@@ -39,8 +39,8 @@ class propertyActions extends autoPropertyActions
 		$c = file_get_contents($url);
 		$c = substr($c, strpos($c, '<div id="setThumbs" class="clearfix">'));
 		$c = substr($c, 0, strpos($c, '<br clear="all"'));
-		die($c);
-		die(print_r($url));
+		// die($c);
+		// die(print_r($url));
 		$photos = $photos['photoset']['photo'];
 		
 		$files = array();
