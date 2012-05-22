@@ -23,7 +23,7 @@
       </div>
       <?php $path = sfConfig::get('sf_upload_dir').'/'.$p->getMainPhoto()->getPhoto() ?>
       <?php $url = thumbnail_url($path, 510, 216, 60); ?>
-      <div class="image_holder"><div class="inside" style="background:url(<?php echo $url ?>) center center;"></div></div>
+      <div class="image_holder"><a href="<?php echo url_for('@show?id='.$p->getId()) ?>"><div class="inside" style="background:url(<?php echo $url ?>) center center;"></div></a></div>
     </div>
   </div>
   <!--div class="bg_bottom">&nbsp;</div-->
