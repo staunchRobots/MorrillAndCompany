@@ -188,6 +188,9 @@ $(window).ready(function () { // return;
 	  $('.newsletter [type=text]').click(function() {
 	    if($(this).val().indexOf(' email') != -1) $(this).val('');   
 	  });
+	$('.formWrapper form').submit(function(e) {
+	    alert('Thanks for your email!');
+	});
 });
 
 
