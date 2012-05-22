@@ -34,6 +34,7 @@ class propertyActions extends sfActions
   										orderBy('q.id')->
   										execute()->
   										getFirst();
+  	$this->properties = Doctrine::getTable('Property')->createQuery('q')->orderBy('q.id')->execute();
   }
   
   public function executeList(sfWebRequest $request)
@@ -42,9 +43,35 @@ class propertyActions extends sfActions
   
   public function executeMail(sfWebRequest $request)
   {
-    mail('todd@wildcatwebdev.com', 'message', $request->getParameter('email')."\n".$request->getParameter('phone')."\n".$request->getParameter('message'));
-    mail('kontakt@azielinski.info', 'message', $request->getParameter('email')."\n".$request->getParameter('phone')."\n".$request->getParameter('message'));
-    $this->redirect('@show?id='.$request->getParameter('id'));
+    $e = new QuoteRequest();
+    $e->setEmail($request->getParameter('email'))->
+        setContents($request->getParameter('message'))->
+	setPhone($request->getParameter('phone'))->
+	save()
+    ;
+  
+    mail('todd@toddmorrill.com', 'A new quote request from morrillandco.com', $request->getParameter('email')."\n".$request->getParameter('phone')."\n".$request->getParameter('message'));
+    mail('tmorrill@mris.com',    'A new quote request from morrillandco.com', $request->getParameter('email')."\n".$request->getParameter('phone')."\n".$request->getParameter('message'));
+
+    /*
+    The code below is not working becuase of some server/symfony/config issues I dont have a time to deal with, but
+    How it should look like:
+
+    $message = $this->getMailer()->compose(
+      array('quotes@morrillandcompany.com' => 'Morrill And Company website'),
+      array('todd@toddmorrill.com',
+	    'tmorrill@mris.com'),
+      'A new quote request from morrillandco.com',
+      $request->getParameter('email')."\n".$request->getParameter('phone')."\n".$request->getParameter('message')
+    );
+    
+    $this->getMailer()->send($message);
+    */
+
+    if($request->getParameter('id') == -1)
+      $this->redirect('/');
+    else
+      $this->redirect('@show?id='.$request->getParameter('id'));
   }
   
 }
